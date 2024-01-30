@@ -33,3 +33,4 @@ console.log(bio.replace("e"," sharma"))
 console.log(bio.italics())
 console.log(bio.padStart(15, 'hello')) //is is used to add something in the variable
 console.log(bio.endsWith(' ')) //it is consider space
+console.log(bio.startsWith("P"))
