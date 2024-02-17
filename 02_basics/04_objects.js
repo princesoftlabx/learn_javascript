@@ -67,3 +67,17 @@ const course = {
 const {courseInstructor: instructor} = course // destructuring of object
 // console.log(courseInstructor) 
 console.log(instructor) 
+
+// Javascript Object Notation (JSON)
+
+// {
+//     "name": "Prince",
+//     "coursename": "JS by Histesh choudhary",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
