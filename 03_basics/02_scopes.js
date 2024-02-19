@@ -38,13 +38,13 @@ if(true){
 
 // ****************************** interesting *************************************
 
+addOne(5)
 function addOne(value){
     return value + 1
 }
-addOne(5)
 
 
+addTwo(5)
 const addTwo = function(num){
     return num + 2
 }
-addTwo(5)
