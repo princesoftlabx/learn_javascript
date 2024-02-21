@@ -39,7 +39,15 @@
 
 const isUserloggedIn = true
 const debitCard = true
+const loggedInFromGoogle =  false
+const loggedInFromEmail = true
 
-if(isUserloggedIn && debitCard){
+if(isUserloggedIn && debitCard){    //and logic
     console.log("Allow to buy courses");
 }
+
+if (loggedInFromGoogle || loggedInFromEmail) {  //or logic
+    console.log("user logged in")
+    
+}
+
