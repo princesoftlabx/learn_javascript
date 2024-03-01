@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM | NodeLIST & Create Elements</title>
+</head>
+<body style="background: #212121; color: #fff;">
+    
+</body>
+
+<script>
+    function createNewDiv(text, title, titleValue, Class){
+        
+        const div = document.createElement('div');
+        console.log(div);
+        div.className = Class;
+        div.id = Math.round(Math.random() * 10000 + 1)
+        div.setAttribute(title, titleValue)
+        // div.style.background = "green"
+        div.style.padding = "15px"
+        // div.innerHTML = "Prince Sharma"
+        const addText = document.createTextNode(text)
+        div.appendChild(addText)
+    
+        document.body.appendChild(div)
+        let color = ['green', 'blue', 'yellow', 'red']
+
+        setTimeout(
+            function colorChange(){
+
+                for (let index = 0; index < color.length; index++) {
+                div.style.background = color[index]
+                
+            }
+            } , 1000)
+
+    }
+    
+
+    createNewDiv("My name is Prince Sharma", "title", "New Div", "myName")
+</script>
+
+</html>
