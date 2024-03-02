@@ -8,16 +8,37 @@
 <body style="background: #212121; color: #fff;">
     <ul class="language">
         <li>javascript</li>
-        <li>python</li>
+        <!-- <li>python</li> -->
     </ul>
 </body>
 <script>
     function addLanguage(langName){
         const li = document.createElement('li')
         li.innerHTML = `${langName}`
-        const ul = document.querySelector('.language').appendChild(li)
+        const ul = document.querySelector('.language').appendChild(li) // It will traverse whole tree and then add a new value
     }
     addLanguage('python')
     addLanguage('typescript')
+
+    function addOptiLang(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLang('golang')
+
+    //Edit
+    const secondLang = document.querySelector("li:nth-child(2)");
+    // secondLang.innerHTML = "Mojo" 
+    const newLi =  document.createElement("li")
+    newLi.textContent = "Mojo"
+    secondLang.replaceWith(newLi)
+
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>Typescript</li>'
+
+    //remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
 </script>
 </html>
