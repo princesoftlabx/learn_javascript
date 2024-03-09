@@ -1,7 +1,7 @@
 # Projects related to DOM
 
 ## Project Link
-[Click here](https://stackblitz.com/edit/stackblitz-starters-sfzbbw?file=backgroundChanger%2Findex.html)
+[Click here](https://stackblitz.com/edit/stackblitz-starters-2vrgj3?file=backgroundChanger%2Findex.html)
 
 # Solution Code
 
@@ -38,7 +38,7 @@ body.style.backgroundColor = "white"
 ## Project 2 Solution
 
 ## Project Link
-[Click here](https://stackblitz.com/edit/stackblitz-starters-7jnhfz?file=BMICalculator%2Findex.html)
+[Click here](https://stackblitz.com/edit/stackblitz-starters-2vrgj3?file=BMICalculator%2Findex.html)
 
 ```javascript
 const form = document.querySelector('form')
