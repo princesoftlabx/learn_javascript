@@ -58,7 +58,16 @@ else if(weight === '' || weight < 0 || isNaN(weight)){
 else{
   const bmi = (weight / ((height*height)/10000)).toFixed(2)
   //show the result 
-  results.innerHTML = `<span>${bmi}</span>`
+  //show the result 
+  if(bmi <= 18.6){
+    results.innerHTML = `<span> You are under weight ${bmi}</span>`
+  }
+  if(bmi > 18.6 && bmi <= 24.9){
+    results.innerHTML = `<span> You are in normal bmi index ${bmi}</span>`
+  }
+  if(bmi > 24.9){
+    results.innerHTML = `<span> You are Over Weight ${bmi}</span>`
+  }
 }
 
 })
