@@ -219,3 +219,32 @@ const stopChangingColor = function(){
 document.querySelector('#start').addEventListener('click',startChangingColor)
 document.querySelector('#stop').addEventListener('click',stopChangingColor)
 ```
+
+## Project 6 Solution
+
+## Project Link
+[Click Here](https://stackblitz.com/edit/stackblitz-starters-haxubb?file=keyboardCheck%2Findex.html)
+
+```javascript
+const insert = document.getElementById('insert');
+
+window.addEventListener('keydown', (e)=>{
+  insert.innerHTML = `
+    <div class = 'color'>
+      <table>
+    <tr>
+      <th>key</th>
+      <th>keyCode</th>
+      <th>code</th>
+    </tr>
+    <tr>
+      <td>${e.key === ' ' ? 'Space' : e.key}</td>
+      <td>${e.keyCode}</td>
+      <td>${e.code}</td>
+    </tr>
+   
+    </table>
+    </div>
+  `;
+});
+```
